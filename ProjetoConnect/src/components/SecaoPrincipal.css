@@ -1,0 +1,164 @@
+.secao {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+
+    background:
+
+        linear-gradient(90deg,
+            rgba(5, 20, 45, 1) 30%,
+            rgba(5, 20, 45, 0.95) 45%,
+            rgba(5, 20, 45, 0.6) 60%,
+            rgba(5, 20, 45, 0.2) 75%,
+            rgba(5, 20, 45, 0) 90%),
+        url("../img/imagemSecao.jpg");
+
+    background-size: cover, 70%;
+    background-position: center right;
+    color: white;
+}
+
+
+.conteudo {
+    max-width: 550px;
+}
+
+
+.marca {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+
+.secao h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+
+.secao p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 400px;
+}
+
+
+.btn-principal {
+    display: inline-block;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #009ed6, #005fcc);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s ease;
+
+
+
+}
+
+.btn-principal:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.7);
+    background: linear-gradient(135deg, #009ed6, #005fcc);
+}
+
+@media (max-width: 1171px) {
+    .secao {
+        min-height: 85vh;
+        padding: 60px 5%;
+        justify-content: center;
+        text-align: center;
+        /* Gradiente escuro total para cobrir a imagem e destacar o texto */
+        background: 
+            linear-gradient(0deg, 
+                rgba(5, 20, 45, 0.85) 0%, 
+                rgba(5, 20, 45, 0.7) 100%), 
+            url("../img/imagemSecao.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .conteudo {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .secao h1 {
+        font-size: 2.8rem;
+        margin: 20px 0;
+    }
+
+    .secao p {
+        font-size: 1.1rem;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .btn-principal {
+        padding: 18px 40px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .secao {
+        min-height: 80vh;
+        padding: 40px 5%;
+        justify-content: center;
+        text-align: center;
+
+        background:
+            linear-gradient(0deg,
+                rgba(5, 20, 45, 0.9) 0%,
+                rgba(5, 20, 45, 0.7) 100%),
+            url("../img/imagemSecao.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .conteudo {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao h1 {
+        font-size: 2.2rem;
+        margin: 15px 0;
+    }
+
+    .secao p {
+        font-size: 1rem;
+        margin: 0 auto 25px auto;
+        text-align: center;
+    }
+
+    .btn-principal {
+        padding: 15px 30px;
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .secao h1 {
+        font-size: 1.8rem;
+    }
+
+    .marca {
+        font-size: 0.8rem;
+    }
+}

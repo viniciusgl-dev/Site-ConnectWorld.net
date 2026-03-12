@@ -1,0 +1,124 @@
+.footer {
+    background: white;
+    color: #05142d;
+    padding: 40px 0 20px 0;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+    align-items: center; /* Centraliza verticalmente todos os itens da linha */
+}
+
+.footer-logo-center {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente na coluna */
+    align-items: center;
+}
+
+.footer-logo-center img {
+    max-width: 180px;
+    height: auto;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-item h2, 
+.footer-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #05142d;
+}
+
+.footer-item p, 
+.footer-item a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-item a:hover {
+    color: #00aaff;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.contato img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-copy {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .footer-container {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "info links"
+            "planos contato";
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .footer-logo-center {
+        grid-area: logo;
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Vincula as classes às áreas do grid */
+    .footer-item:nth-child(2) { grid-area: info; }
+    .footer-item:nth-child(3) { grid-area: links; }
+    .footer-item:nth-child(4) { grid-area: planos; }
+    .footer-item:nth-child(5) { grid-area: contato; }
+}
+
+/* Mobile: Tudo em uma única coluna centralizada */
+@media (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-logo-center {
+        width: 100%;
+    }
+
+    .contato {
+        justify-content: center;
+    }
+
+    .footer-item a {
+        margin: 0 auto 8px auto;
+    }
+}

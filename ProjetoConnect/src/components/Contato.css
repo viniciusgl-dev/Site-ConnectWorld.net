@@ -1,0 +1,195 @@
+.redes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 60px 10%;
+    text-align: right;
+    color: white;
+    min-height: 450px;
+    background:
+        linear-gradient(to left,
+            rgba(5, 20, 45, 1) 0%,
+            rgba(5, 20, 45, 1) 45%,
+            rgba(5, 20, 45, 0) 100%),
+
+        url("../img/quetal.png");
+
+    background-color: #05142d;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+}
+
+.redes-titulo h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.redes-titulo p {
+    text-align: right;
+    opacity: 0.8;
+
+}
+
+#bottom {
+    margin-bottom: 50px;
+}
+
+
+.redes-cards {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.rede-card {
+    width: 180px;
+    height: 150px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+
+.rede-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.rede-card img {
+    width: 24px;
+    height: 24px;
+}
+
+.instagram {
+    background: linear-gradient(135deg,
+            #833ab4,
+            #fd1d1d,
+            #fcb045);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
+    box-shadow: 0 10px 25px rgba(220, 39, 67, 0.45);
+}
+
+.whatsapp {
+    background: #25D366;
+    color: black;
+}
+
+.whatsapp:hover {
+    background: #1EBE5D;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+
+
+@media (max-width: 1100px) {
+    .redes-container {
+        padding: 80px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        min-height: auto;
+        
+
+        background: linear-gradient(180deg, rgba(5, 20, 45, 0.7) 0%, rgba(5, 20, 45, 1) 100%), 
+                    url("../img/quetal.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    .redes-titulo h2 {
+        font-size: 2.5rem;
+        text-align: center; 
+        width: 100%;
+    }
+
+    .redes-titulo p {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+    }
+
+    .redes-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: nowrap; 
+        margin-top: 15px;
+    }
+
+    .rede-card {
+        width: 180px; 
+        height: 180px;
+        border-radius: 25px; 
+    }
+
+
+    #bottom {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes-container {
+        padding: 40px 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .redes-titulo h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .redes-titulo p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .redes-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .rede-card {
+        width: 125px;
+        height: 110px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .rede-card img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rede-card span {
+        font-size: 13px;
+    }
+}

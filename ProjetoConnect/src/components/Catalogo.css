@@ -1,0 +1,129 @@
+.container-catalogo {
+  padding: 80px 20px;
+  background-color: white;
+
+}
+
+
+.titulo-catalogo {
+  color: #081f36;
+  text-align: center;
+  font-size: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.catalogo-corpo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.card-plano {
+
+  padding: 40px 30px;
+  width: 280px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  transition: 0.4s;
+  background: #081f36;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+
+}
+
+
+.card-plano:hover {
+  transform: translateY(-15px);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  background: #123a7a;
+}
+
+
+.card-plano.destaque {
+  border: 2px solid gold;
+}
+
+.card-plano.destaque:hover {
+  transform: translateY(-15px);
+}
+
+.label-recomendado {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: gold;
+  color: black;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+
+.diferencial-catalogo {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.diferencial-catalogo span {
+  line-height: 1.8;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.diferencial-catalogo img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+
+.preco-catalogo {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.preco-catalogo span {
+  font-size: 13px;
+  margin: 10px;
+}
+
+
+.assinar {
+  display: flex;
+  justify-content: center;
+}
+
+.assinar a {
+  padding: 12px 45px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c2ff, #007bff);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.assinar a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  background: linear-gradient(135deg, #009ed6, #005fcc);
+}

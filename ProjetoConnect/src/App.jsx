@@ -6,7 +6,7 @@ import Faq from './components/Faq'
 import Sobre from './components/Sobre'
 import Contato from './components/Contato'
 import Footer from './components/Footer'
-import Whatsapp from './components/whatsapp'
+import Whatsapp from './components/Whatsapp'
 
 function App() {
   return (

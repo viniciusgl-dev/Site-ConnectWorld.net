@@ -4,7 +4,7 @@ const SecaoPrincipal = () => {
     return (
         <section className="secao">
             <div className="conteudo">
-                <span className="marca">Conennct World.net</span>
+                <span className="marca">Connect World.net</span>
 
                 <h1>
                     Internet Fibra Óptica<br />
